@@ -1,0 +1,188 @@
+DAY 1 JAVASCRIPT TASK
+
+
+Code1
+
+Code 1(using direct input)
+
+var myarray=[1,2,3,4,5,6];
+if((myarray.length)%2!=0){
+    console.log("error")
+}
+else{
+const slice1=myarray.slice(0,3);
+const slice2=myarray.slice(3);
+console.log(myarray);
+console.log(slice1);
+console.log(slice2);
+var swappedarray=slice2.concat(slice1);
+console.log(swappedarray);}
+
+===============================================================
+
+code1(taking user input)
+
+var myarray = prompt("enter array elements");
+console.log(myarray);
+if(myarray.length%2!=0){
+    console.log("error");
+}
+else{
+    const slice1 = myarray.slice(0,myarray.length/2);
+    const slice2 = myarray.slice(myarray.length/2);
+    const swappedarray = slice2.concat(slice1);
+    console.log(swappedarray);
+}
+
+===============================================================
+Code2
+
+Code 2 (taking user input)
+
+
+function calculation(var1,var2,operation){
+    var var1=prompt("enter var1 value")
+    var var2=prompt("enter var2 value")
+    var operation=prompt("enter operation to be performed");
+    switch(operation){
+        case "+":
+            console.log("Addition of " + var1 + " & " + var2 + " is " + (var1+var2));
+            break;
+        case "-":
+            console.log("Subtraction of "+  var1 + " & " + var2 + " is " + (var1-var2));
+            break;
+        case "/":
+            console.log("Division of " + var1 + " & " + var2 + " is " + (var1/var2));
+            break;
+        case "*" :
+            console.log("Multiplication of " +  var1 + " & " + var2 + " is " + (var1*var2));
+            break;
+            
+        default:
+            console.log("operation not present");
+    }
+}
+calculation();
+
+  
+
+
+
+=========================================================
+
+code2(direct input)
+
+
+
+function calculation(var1,var2,operation){
+  switch(operation){
+        case "+":
+            console.log("Addition of " + var1 + "&" + var2 + " is " + (var1+var2));
+            break;
+        case "-":
+            console.log("Subtraction of "+  var1 + "&" + var2 + " is " + (var1-var2));
+            break;
+        case "/":
+            console.log("Division of " + var1 + "&" + var2 + " is " + (var1/var2));
+            break;
+        case "*" :
+            console.log("Multiplication of " +  var1 + "&" + var2 + " is " + (var1*var2));
+            break;
+            
+        default:
+            console.log("operation not present");
+    }
+}
+calculation(10,5,"#");
+
+==========================================================
+
+Code3
+
+
+function maximumdiff(array)
+{
+  var maxvalue = -1;
+  var tempvar;
+	for (var i = 0; i < array.length - 1; i++)
+   {
+		tempvar = Math.abs(array[i] - array[i + 1]);
+		maxvalue = Math.max(maxvalue, tempvar);
+	 }
+	return maxvalue;
+}
+console.log(maximumdiff([48,3,11,9]));
+
+=============================================================
+
+Code4
+const personDetails = {
+    firstName:"Jack",
+    lastName:"Ma",
+    location:"China" 
+    
+};
+console.log("Keys: " + Object.keys(personDetails));
+console.log("Values: "+ Object.values(personDetails));
+var objectLength = Object.keys(personDetails).length;
+console.log("Length: " + objectLength);
+    
+==========================================================
+
+Code 5
+
+
+var Age=prompt("Age");
+if(Age>18){
+    console.log("Congratulations! You are eligible for voting");
+}
+else{
+    console.log("You are not eligible for Voting!")
+}
+  
+============================================================
+
+
+
+Code6
+
+
+function displayer() {
+  //console.log("callbackfunction");
+}
+
+function myCalculator(val1, val2, callbackarg) {
+  let sum = val1 + val2;
+  callbackarg(sum);
+  console.log(sum);
+}
+
+myCalculator(5, 15, displayer);
+
+=============================================================
+
+
+Code 7
+
+
+function comparearray(array1,array2){
+var input = prompt("Enter a list of items separated by commas:");
+var array1 = input.split(",");
+var input = prompt("Enter a list of items separated by commas:");
+var array2 = input.split(",");
+
+    if(array1.toString === array2.toString){
+        console.log("Same")
+    }
+    else{
+        console.log("Different")
+    }
+}
+comparearray();
+
+
+================************************============================
+
+
+
+
